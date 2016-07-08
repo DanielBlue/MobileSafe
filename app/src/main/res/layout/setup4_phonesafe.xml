@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mobilesafe74.activity.PhoneSafeSetup4Activity">
+    <TextView
+       style="@style/TitleTextView"
+        android:text="4 恭喜您,设置完成"/>
+    <com.example.mobilesafe74.view.SettingItemView
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.example.mobilesafe74"
+        android:layout_margin="5dp"
+        android:id="@+id/siv_setup4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mobilesafe:title = "防盗保护"
+        mobilesafe:des_on = "防盗保护已开启"
+        mobilesafe:des_off = "防盗保护未开启"></com.example.mobilesafe74.view.SettingItemView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_online"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/phone"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/btn_set4_pre"
+            style="@style/BtnPrePage" />
+        <Button
+            android:id="@+id/btn_set4_next"
+            style="@style/BtnNextPage"
+            android:text="设置完成"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -9,4 +9,40 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="TitleTextView">
+        <!-- Customize your theme here. -->
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@color/backgound</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+
+    </style>
+
+    <style name="BtnNextPage">
+        <!-- Customize your theme here. -->
+        <item name="android:text">"下一页"</item>
+        <item name="android:drawableRight">@drawable/next</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/btn_next_page</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+
+    </style>
+
+    <style name="BtnPrePage">
+        <!-- Customize your theme here. -->
+        <item name="android:text">"上一页"</item>
+        <item name="android:drawableLeft">@drawable/previous</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/btn_next_page</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+
+    </style>
+
 </resources>
