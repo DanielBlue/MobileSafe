@@ -44,7 +44,7 @@ public class SpUtil {
      */
     public static void putString(Context context,String key,String value){
         if(sp ==null){
-            sp = context.getSharedPreferences("password",Context.MODE_PRIVATE);
+            sp = context.getSharedPreferences("config",Context.MODE_PRIVATE);
         }
         sp.edit().putString(key,value).commit();
     }
@@ -58,8 +58,20 @@ public class SpUtil {
      */
     public static String getString(Context context,String key,String defValue){
         if(sp ==null){
-            sp = context.getSharedPreferences("password",Context.MODE_PRIVATE);
+            sp = context.getSharedPreferences("config",Context.MODE_PRIVATE);
         }
         return sp.getString(key,defValue);
+    }
+
+    /**
+     * 从sp中删除节点
+     * @param context   上下文
+     * @param key   要删除的节点名称
+     */
+    public static void remove(Context context, String key) {
+        if(sp ==null){
+            sp = context.getSharedPreferences("config",Context.MODE_PRIVATE);
+        }
+        sp.edit().remove(key).commit();
     }
 }

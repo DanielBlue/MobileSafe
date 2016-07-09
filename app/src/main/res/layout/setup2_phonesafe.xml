@@ -12,9 +12,7 @@
         android:padding="5dp"
         android:textSize="18sp"
         android:textColor="#000"
-        android:text="通过绑定sim卡:
-下次重启手机,如果发现sim卡变化
-便会发送报警短信"
+        android:text="通过绑定sim卡:/n下次重启手机,如果发现sim卡变化\n便会发送报警短信"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <com.example.mobilesafe74.view.SettingItemView

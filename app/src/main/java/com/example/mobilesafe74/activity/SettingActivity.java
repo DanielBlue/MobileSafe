@@ -18,6 +18,10 @@ public class SettingActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+        initUI();
+    }
+
+    private void initUI() {
         initUpdate();
         initPhoneFrom();
     }
@@ -26,9 +30,7 @@ public class SettingActivity extends Activity {
      * 设置来点归属地显示是否开启
      */
     private void initPhoneFrom() {
-        final SettingItemView siv_phone_from = (SettingItemView) findViewById(R.id.siv_phone_from);
-        final boolean open_phone_from = SpUtil.getBoolean(this,ConstantValue.OPEN_PHONE_FROM,false);
-        siv_phone_from.setCheck(open_phone_from);
+        final SettingItemView siv_phone_from =  (SettingItemView) findViewById(R.id.siv_phone_from);
         siv_phone_from.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,8 +46,6 @@ public class SettingActivity extends Activity {
      */
     private void initUpdate() {
         final SettingItemView siv_update = (SettingItemView) findViewById(R.id.siv_update);
-        final boolean open_update = SpUtil.getBoolean(this,ConstantValue.OPEN_UPDATE,false);
-        siv_update.setCheck(open_update);
         siv_update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

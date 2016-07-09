@@ -12,18 +12,18 @@
         android:padding="5dp"
         android:textSize="18sp"
         android:textColor="#000"
-        android:text="sim卡变更后
-报警短信会发送给安全号码"
+        android:text="sim卡变更后\n报警短信会发送给安全号码"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
+        android:id="@+id/et_safe_contact"
         android:textSize="18sp"
         android:maxLines="1"
         android:hint="请输入安全号码"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/choose_contact"
+        android:id="@+id/bt_choose_contact"
         android:layout_margin="5dp"
         android:textSize="18sp"
         android:text="联系人"

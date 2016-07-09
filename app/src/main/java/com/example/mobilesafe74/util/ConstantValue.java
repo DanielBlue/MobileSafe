@@ -17,11 +17,15 @@ public class ConstantValue {
      */
     public static final String SETUP_PHONESAFE = "setup_phonesafe";
     /**
-     * 保存sim卡是否绑定的boolean值的key
+     * 保存sim卡序列号String值的key
      */
-    public static final String SETUP2_PHONESAFE = "setup2_phonesafe";
+    public static final String SIM_NUM = "setup2_phonesafe";
     /**
      * 保存手机防盗是否开启的boolean值的key
      */
     public static final String SETUP4_PHONESAFE = "setup4_phonesafe";
+    /**
+     * 保存安全号码的String值的key
+     */
+    public static final String SAFE_CONTACT = "safe_contact";
 }
